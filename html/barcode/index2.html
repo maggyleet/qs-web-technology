@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarCode</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.12.1/JsBarcode.all.min.js"
+        integrity="sha512-fLmJPYDfCIAZ0gpG/iiIzPw113KquhzI1bxG0XhiLYyqm8Ax2lEiq1h1qv2vafH9tLzkjm4HYRWSeKoGFH4xIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <canvas id="oops"></canvas>
+
+    <script>
+        JsBarcode("#oops", "Plastic Pie");
+    </script>
+
+</body>
+
+</html>
