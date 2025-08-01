@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.12.1/JsBarcode.all.min.js"
+        integrity="sha512-fLmJPYDfCIAZ0gpG/iiIzPw113KquhzI1bxG0XhiLYyqm8Ax2lEiq1h1qv2vafH9tLzkjm4HYRWSeKoGFH4xIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <details>
+        <summary>DropDown 1</summary>
+        <h3>QR Code 1</h3>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=www.google.com" alt="QR Code">
+        <h3>QR Code 2</h3>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            alt="YouTube QR Code" />
+
+        <br>
+        <br>
+
+        <h3>Bar Code 1</h3>
+        <canvas id="pak"></canvas>
+
+        <br>
+
+        <h3>Bar Code 2</h3>
+
+        <canvas id="oops"></canvas>
+
+        <script>
+            JsBarcode("#pak", "8902376489876");
+        </script>
+
+        <script>
+            JsBarcode("#oops", "Plastic Pie");
+        </script>
+
+    </details>
+
+    <details>
+        <summary>DropDown 2</summary>
+
+        <body>
+
+            <h2>Image</h2>
+            <img src="https://images.unsplash.com/photo-1654447398839-0c18772d941b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9yc2hlfGVufDB8fDB8fHww"
+                alt="porsche" height="700" width="500">
+            <p>This is a stunning red Porsche car, known for its design and high-performance engineering.
+            </p>
+
+            <hr>
+
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="assets/Maya-Nadhi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>This is a popular Tamil melody that blends traditional instruments with modern rhythms, capturing the
+                essence of South Indian music.</p>
+
+            <hr>
+
+            <h2>Video</h2>
+            <video src="https://cdn.pixabay.com/video/2025/06/03/283533_tiny.mp4" controls loop muted
+                poster="https://i.pinimg.com/736x/15/56/1d/15561da880071704fbd113390b9c6d2e.jpg"></video>
+            <p>This video shows a powerful ocean wave and a calming yet majestic display of
+                nature's force.</p>
+    </details>
+
+    <details>
+        <summary>DropDown 3</summary>
+
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SguSEfJhBZM?si=fxOK21YFTb_O-h3f"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br> <br>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iCIsnR-pZsI?si=S3IELFsuXIkvUETS"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <h3>Geo Location 1</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31105.87054363894!2d80.23648091997374!3d12.95688465314118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525cedf6b378e9%3A0x675e1029443bc038!2sPalavakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600041!5e0!3m2!1sen!2sin!4v1753417688007!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br><br>
+            <h3>Geo Location 2</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31106.77129537951!2d80.12564053248329!3d12.94967136235592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb1cef75f81%3A0xe2956fefeaa0fa80!2sChromepet%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1754022987478!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </details>
+
+    <a href="list.html" target="_blank"><button>Next Button</button></a>
+
+    <a href="table.html" target="_blank"><button>Go back</button></a>
+</body>
+
+</html>
