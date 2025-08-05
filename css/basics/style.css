@@ -1,0 +1,13 @@
+h2 {
+    background-color: rgb(241, 241, 173);
+    color: purple;
+    padding: 12px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding: 19px;
+    background-color: darkcyan;
+    color: snow;
+}
