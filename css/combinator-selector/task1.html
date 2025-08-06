@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <style>
+        h1 {
+            color: antiquewhite;
+            background-color: black;
+        }
+
+        div h6 {
+            color: indigo;
+            background-color: springgreen;
+            font-size: 23px;
+        }
+
+        ul>li {
+            color: brown;
+            background-color: darkturquoise;
+        }
+
+        div+div {
+            color: bisque;
+            background-color: maroon;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
+
+        h2~h4 {
+            color: tomato;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Descendant selectors ( space)</h1>
+    <div>
+        <h6>William</h6>
+        <h6>Joe</h6>
+        <a href="#" target="_blank">
+            <h6>Meg</h6>
+        </a>
+        <a href="#" target="_blank">
+            <h6>James</h6>
+        </a>
+    </div>
+
+    <h1>Child Selectors(>)</h1>
+
+    <div>
+        <ul>
+            <li>Harry</li>
+            <li>Zayn</li>
+            <li>Liam</li>
+            <ol>
+                <li>Selena</li>
+                <li>Rihana</li>
+            </ol>
+        </ul>
+    </div>
+
+    <h1>Adjacent sibling selector(+)</h1>
+    <div></div>
+    <div>Elizabeth</div>
+    <div>Alex</div>
+    <span>
+        <div>Gabriel</div>
+    </span>
+    <span>
+        <div>Kushi</div>
+    </span>
+
+    <h1>General sibling Selector(~)</h1>
+
+    <h2>Harris</h2>
+    <h4>Leela</h4>
+    <h3>Banu</h3>
+    <h4>Chiran</h4>
+    <h3>Mohan</h3>
+
+
+
+</body>
+
+</html>

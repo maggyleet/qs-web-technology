@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        div p {
+            color: indigo;
+            background-color: springgreen;
+        }
+
+        div>h1 {
+            color: brown;
+            background-color: darkturquoise;
+        }
+
+        h1+p {
+            color: red;
+            background-color: mediumseagreen;
+        }
+
+        h1~h3 {
+            color: tomato;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    Descendant selectors ( space)
+    <div>
+        <p>Purple</p>
+        <p>Mauve</p>
+        <span>
+            <p>Yellow</p>
+        </span>
+        <span>
+            <p>Crimson</p>
+        </span>
+    </div>
+
+    Child Selectors(>)
+
+    <div>
+        <h1>Purple</h1>
+        <h1>Mauve</h1>
+        <span>
+            <h1>Green</h1>
+        </span><span>
+            <h1>Pink</h1>
+        </span>
+    </div>
+
+    Adjacent sibling selector(+)
+
+    <h1>Purple</h1>
+    <p>Mauve</p>
+    <h2>Green</h2>
+    <p>Pink</p>
+    <h2>Navy Blue</h2>
+
+    General sibling Selector(~)
+
+    <h1>Purple</h1>
+    <h3>Mauve</h3>
+    <h2>Green</h2>
+    <h3>Pink</h3>
+    <h2>Navy Blue</h2>
+
+
+</body>
+
+</html>
