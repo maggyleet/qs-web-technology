@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selectors</title>
+    <style>
+        p {
+            font-size: 26px;
+        }
+
+        #flr::first-letter {
+            color: blueviolet;
+            font-size: 100px;
+            font-weight: 700;
+            padding: 0 7px;
+        }
+
+        .fln::first-line {
+            color: green;
+            background-color: bisque;
+        }
+
+        #meet::before {
+            content: "Nice to ";
+            color: deeppink;
+        }
+
+        #meet::after {
+            content: " dear";
+            color: brown;
+        }
+
+        ul>li {
+            color: gold;
+
+        }
+
+        h3::selection {
+            color: dodgerblue;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="flr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat placeat totam veritatis facere
+        deleniti a velit, doloremque qui ratione sed harum eum sint illo hic, reiciendis obcaecati enim dignissimos
+        excepturi.</p>
+    <hr>
+    <p class="fln">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore adipisci, dignissimos tenetur
+        exercitationem excepturi autem error dicta dolorum voluptatibus assumenda neque fugit blanditiis facere alias
+        nam cum consectetur, voluptatem sequi unde libero tempora! Expedita, asperiores soluta vitae temporibus rem
+        corporis?</p>
+    <hr>
+    <h2 id="meet">to meet you</h2>
+    <hr>
+    <ul>
+        <li>Pudukottai</li>
+        <li>Guwahati</li>
+        <li>Jaipur</li>
+        <li>Vishakapattinam</li>
+        <li>Mysore</li>
+    </ul>
+    <hr>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas excepturi doloremque placeat repellendus sequi
+        neque reprehenderit, corporis facilis, beatae sit praesentium eos deleniti officiis iste quam adipisci et quis!
+        Non illum explicabo reprehenderit. Sequi quasi est nihil sapiente placeat cupiditate nostrum a nulla distinctio
+        minima aperiam in rerum, aspernatur fugit, quos mollitia libero minus perferendis amet commodi quisquam
+        possimus? Ducimus!
+    </h3>
+
+
+</body>
+
+</html>
