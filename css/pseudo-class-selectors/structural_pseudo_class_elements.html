@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Pseudo Class Elements</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #title {
+            color: rgb(5, 118, 4);
+            font-size: 70px;
+            text-decoration: underline wavy black;
+        }
+
+        .first-child>h1:first-child {
+            color: blueviolet;
+            background-color: black;
+        }
+
+        .last-child>h1:last-child {
+            color: red;
+            background-color: black;
+        }
+
+        .nth-child>p:nth-child(odd) {
+            color: cyan;
+            background-color: black;
+            font-size: 30px;
+        }
+
+        .nth-child>p:nth-child(even) {
+            color: white;
+            background-color: purple;
+        }
+
+        .nth-child-num>:nth-child(4) {
+            color: darkred;
+            background-color: gold;
+        }
+
+        .first-of-type>p:first-of-type {
+            color: deeppink;
+            background-color: rgb(101, 170, 231);
+            font-size: 50px;
+        }
+
+        .last-of-type>p:last-of-type {
+            color: khaki;
+            font-size: 50px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">first-child</h1>
+    <div class="first-child">
+        <h1>Manoj</h1>
+        <p>Nataraj</p>
+        <p>Bharath</p>
+        <h2>Naveen</h2>
+        <h1>Velu</h1>
+    </div>
+
+
+
+    <h1 id="title">last-child</h1>
+    <div class="last-child">
+        <h1>Priyanka</h1>
+        <p>Divya</p>
+        <h2>Devi</h2>
+        <p>Jagan</p>
+        <h1>Karthiga</h1>
+    </div>
+
+
+
+    <h1 id="title">nth-child</h1>
+    <div class="nth-child">
+        <p>Priyanka</p>
+        <p>Divya</p>
+        <p>Devi</p>
+        <p>Jagan</p>
+        <p>Karthiga</p>
+    </div>
+
+
+
+    <h1 id="title">nth-child-num</h1>
+    <div class="nth-child-num">
+        <h1>Manoj</h1>
+        <p>Nataraj</p>
+        <p>Bharath</p>
+        <h2>Naveen</h2>
+        <h1>Velu</h1>
+    </div>
+
+
+
+    <h1 id="title">first-of-type</h1>
+    <div class="first-of-type">
+        <h1>Priyanka</h1>
+        <p>Divya</p>
+        <h2>Devi</h2>
+        <p>Jagan</p>
+        <h1>Karthiga</h1>
+    </div>
+
+
+
+    <h1 id="title">last-of-type</h1>
+    <div class="last-of-type">
+        <h1>Manoj</h1>
+        <p>Nataraj</p>
+        <h2>Naveen</h2>
+        <p>Bharath</p>
+        <h1>Velu</h1>
+    </div>
+
+</body>
+
+</html>
