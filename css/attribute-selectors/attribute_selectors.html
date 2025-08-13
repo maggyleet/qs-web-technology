@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        p {
+            font-size: 30px;
+        }
+
+        [href] {
+            text-decoration: underline wavy black;
+            background-color: rgb(250, 146, 146);
+            font-size: 30px;
+            color: brown;
+        }
+
+        [title="glow"] {
+            color: darksalmon;
+            background-color: green;
+        }
+
+        [title~="meow"] {
+            color: red;
+            background-color: gold;
+        }
+
+        [title|="purr"] {
+            color: grey;
+            background-color: lawngreen;
+        }
+
+        [class^="note"] {
+            color: crimson;
+            background-color: coral;
+        }
+
+        [class$="face"] {
+            color: gray;
+            background-color: navy;
+        }
+
+        [class*="commerce"] {
+            color: rebeccapurple;
+            background-color: mediumturquoise;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>[attribute]</h1>
+
+    <a href="https://www.google.com/">Google</a>
+
+    <br>
+    <hr>
+
+    <h1>[attribute="value"]</h1>
+
+    <p title="glow ">"glow "</p>
+    <p title=" glow">" glow"</p>
+    <p title="glow">"glow"</p>
+    <p title=" glow ">" glow "</p>
+    <p title="gloww">"gloww"</p>
+    <p title="cat-glow">"cat-glow"</p>
+    <p title="glow-cat">"glow-cat"</p>
+
+    <hr>
+
+    <h1>[attribute~="value"]</h1>
+
+    <p title="meow ">"meow "</p>
+    <p title=" meow">" meow"</p>
+    <p title="meow">"meow"</p>
+    <p title=" meow ">" meow "</p>
+    <p title="meoww">"meoww"</p>
+    <p title="cat-meow">"cat-meow"</p>
+    <p title="meow-cat">"meow-cat"</p>
+
+    <hr>
+
+    <h1>[attribute|="value"]</h1>
+
+    <p title="purr ">"purr "</p>
+    <p title=" purr">" purr"</p>
+    <p title="purr">"purr"</p>
+    <p title=" purr ">" purr "</p>
+    <p title="purrr">"purrr"</p>
+    <p title="purr-">"purr-"</p>
+    <p title="cat-purr">"cat-purr"</p>
+    <p title="purr-cat">"purr-cat"</p>
+
+    <hr>
+
+    <h1>[attribute^="value"]</h1>
+
+    <p class="note ">"note "</p>
+    <p class=" note">" note"</p>
+    <p class="note">"note"</p>
+    <p class="note-">"note-"</p>
+    <p class="notee">"notee"</p>
+    <p class="noteek">"noteek"</p>
+    <p class=" note ">" note "</p>
+    <p class="note-book">"note-book"</p>
+
+    <hr>
+
+    <h1>[attribute$="value"]</h1>
+
+    <p class="face ">"face "</p>
+    <p class=" face">" face"</p>
+    <p class="face">"face"</p>
+    <p class="face-">"face-"</p>
+    <p class="facee">"facee"</p>
+    <p class=" face ">" face "</p>
+    <p class="book-face">"book-face"</p>
+
+    <hr>
+
+    <h1>[attribute*="value"]</h1>
+
+    <p class="commerce ">"commerce "</p>
+    <p class=" commerce">" commerce"</p>
+    <p class="commerce">"commerce"</p>
+    <p class="commerce-">"commerce-"</p>
+    <p class="commercee">"commercee"</p>
+    <p class=" commerce ">" commerce "</p>
+    <p class="commerce-book">"commerce-book"</p>
+    <p class="book-commerce">"book-commerce"</p>
+
+
+</body>
+
+</html>
