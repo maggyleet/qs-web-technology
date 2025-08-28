@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients in CSS</title>
+    <style>
+        .eg1,
+        .eg2,
+        .eg3,
+        .eg4,
+        .eg5,
+        .eg6 {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            margin-bottom: 30px;
+        }
+
+        .eg1 {
+            background: linear-gradient(to top, skyblue, brown, pink, violet, yellow, blue);
+        }
+
+        .eg2 {
+            background: repeating-linear-gradient(to left, skyblue 20%, brown 30%, pink 21%, violet 12%, yellow 34%, blue 32%);
+        }
+
+        .eg3 {
+            background: radial-gradient(skyblue, brown, pink, violet, yellow, blue);
+        }
+
+        .eg4 {
+            background: repeating-radial-gradient(skyblue 29%, brown 31%, pink 29%, violet 12%, yellow 34%, blue 32%);
+        }
+
+        .eg5 {
+            background: conic-gradient(skyblue, brown, pink, violet, yellow, blue);
+        }
+
+        .eg6 {
+            background: repeating-conic-gradient(skyblue 29%, brown 31%, pink 29%, violet 12%, yellow 34%, blue 32%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Linear Gradients</h1>
+    <div class="eg1"></div>
+    <h1>Repeating Linear Gradients</h1>
+    <div class="eg2"></div>
+    <h1>Radial Gradients</h1>
+    <div class="eg3"></div>
+    <h1>Repeating Radial Gradients</h1>
+    <div class="eg4"></div>
+    <h1>Conic Gradients</h1>
+    <div class="eg5"></div>
+    <h1>Repeating Conic Gradients</h1>
+    <div class="eg6"></div>
+
+</body>
+
+</html>
