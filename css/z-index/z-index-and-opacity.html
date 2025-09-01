@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index and opacity</title>
+    <style>
+        p {
+            z-index: 21;
+            position: absolute;
+            top: 70px;
+        }
+
+        img {
+            z-index: 22;
+            position: relative;
+            top: 30px;
+            left: 60px;
+        }
+
+        h1 {
+            opacity: 0.5;
+        }
+
+        #img-opacity {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ipsa ratione dolorum quo? Aspernatur sapiente qui
+        rerum maiores ducimus dolorum atque, facere, adipisci minima quis blanditiis! Ullam vero esse adipisci.</p>
+    <img src="assets/stalker.jpg" alt="">
+
+    <hr>
+
+    <h1>CAT - OPACITY(0.5)</h1>
+    <img src="assets/stalker.jpg" alt="" id="img-opacity">
+
+</body>
+
+</html>
