@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            display: flex;
+            gap: 20px;
+        }
+
+        #jaggery {
+            width: 300px;
+            height: 300px;
+            border: 6px solid black;
+            transition-duration: 5s;
+            transition-delay: 0.3s;
+            transition-property: background-color;
+        }
+
+        #jaggery:hover {
+            background-color: darksalmon;
+        }
+
+        .para {
+            width: 300px;
+            height: auto;
+            border: 3px solid black;
+            transition-duration: 5s;
+            transition-delay: 0.5s;
+            transition-property: width;
+            transition-timing-function: ease-in-out;
+        }
+
+        .para:hover {
+            width: 600px;
+            background: linear-gradient(maroon, cyan, hotpink, yellow, violet, green);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="jaggery">
+
+    </div>
+
+    <div class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ullam perferendis nihil aperiam
+        a distinctio provident voluptas quo officiis ipsum animi, qui doloribus illum sequi consequuntur, aspernatur
+        iste inventore, repellat id velit ducimus iure eligendi nulla nostrum. Adipisci harum quod eligendi laborum, et
+        vel beatae ex ipsum sequi nostrum sunt, provident esse. Quos voluptatibus totam quo delectus iusto, ullam
+        similique aspernatur eius quam in quibusdam harum consequatur facilis aut pariatur aliquid architecto expedita
+        assumenda quisquam? Velit libero quia quod voluptatem earum! Molestiae, commodi! In blanditiis voluptatum
+        excepturi perferendis distinctio quae, culpa unde eligendi repudiandae temporibus, veniam sed. Velit aliquid
+        commodi modi molestiae laborum rem.</div>
+</body>
+
+</html>

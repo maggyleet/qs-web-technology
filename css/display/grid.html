@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #container {
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: 150px 150px;
+            grid-template-columns: 150px 150px;
+            /* grid-gap: 20px; */
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        #demo1 {
+            background-color: rgb(255, 255, 2);
+            border: 2px solid;
+        }
+
+        #demo2 {
+            background-color: sienna;
+            border: 2px solid;
+        }
+
+        #demo3 {
+            background-color: rgb(252, 123, 252);
+            border: 2px solid;
+        }
+
+        #demo4 {
+            background-color: aquamarine;
+            border: 2px solid;
+        }
+
+        #demo1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        #demo2 {
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="demo1">one</div>
+        <div id="demo2">two</div>
+        <div id="demo3">three</div>
+        <div id="demo4">four</div>
+    </div>
+</body>
+
+</html>
