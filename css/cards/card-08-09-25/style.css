@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 body {
     height: 100vh;
@@ -11,14 +12,14 @@ body {
 
 .container {
     display: flex;
-    height: 450px;
-    width: 700px;
+    height: 500px;
+    width: 680px;
     background-color: white;
     border-radius: 10px;
 }
 
 .perfume-img {
-    height: 450px;
+    height: 500px;
     width: auto;
     border-radius: 10px 0 0 10px;
 }
@@ -27,14 +28,58 @@ body {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 21px;
 }
 
 .price {
     display: flex;
-    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
 }
 
-.def {
+.perfume {
     font-family: "Montserrat", sans-serif;
+}
+
+.def,
+.p2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+.p1 {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+.p1,
+.title-2 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.title-2 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 39px;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    height: 55px;
+    width: 280px;
+    border-radius: 8px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart {
+    height: 27px;
+    width: auto;
 }
