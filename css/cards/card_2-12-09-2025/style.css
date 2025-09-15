@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    position: relative;
+    border-radius: 15px;
+}
+
+.container .i-img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.b {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.order {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.para {
+    text-align: center;
+    font-size: 16px;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 9px;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.plan {
+    padding-right: 50px;
+}
+
+.annual {
+    font-weight: 800;
+}
+
+.para,
+.price,
+.cancel {
+    color: rgb(107, 105, 105);
+}
+
+.price {
+    font-weight: 700;
+}
+
+.change {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: hsl(245, 75%, 52%);
+    padding: 16px 80px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.btn:hover {
+    background-color: hsl(250, 54%, 54%);
+    cursor: pointer;
+}
+
+.cancel {
+    font-weight: 900;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: rgb(91, 89, 89);
+    cursor: pointer;
+}
