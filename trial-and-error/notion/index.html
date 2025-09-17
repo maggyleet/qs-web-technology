@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Notion-like (HTML + CSS)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Notes</h1>
+                <button aria-label="Refresh">↻</button>
+            </div>
+            <div class="pages">
+                <div class="page active">
+                    <div class="title">Welcome</div>
+                    <div class="meta">Created: Sep 2025</div>
+                </div>
+                <div class="page">
+                    <div class="title">Project Ideas</div>
+                    <div class="meta">Created: Sep 2025</div>
+                </div>
+            </div>
+            <div class="footer">Tip: click inside page to edit (contenteditable)</div>
+        </aside>
+
+        <!-- Editor -->
+        <main class="editor">
+            <header class="editor-header">
+                <input class="page-title" value="Welcome" aria-label="Page title">
+                <div class="controls">
+                    <span class="muted">Static demo • HTML + CSS only</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="block" contenteditable="true" spellcheck="true">
+                    <h2>Welcome to your simple Notion-like page</h2>
+                    <p>This is a static demo built with only <strong>HTML</strong> and <strong>CSS</strong>.
+                        You can edit text directly — click here and start typing.</p>
+                </div>
+
+                <div class="block" contenteditable="true" spellcheck="true">
+                    <h3>How to use</h3>
+                    <ul>
+                        <li>Click anywhere inside a block to edit.</li>
+                        <li>Use copy/paste to duplicate blocks.</li>
+                        <li>Save with your browser's “Save Page As…” option.</li>
+                    </ul>
+                </div>
+
+                <div class="block" contenteditable="true" spellcheck="true">
+                    <h3>Example To-Do</h3>
+                    <ul class="todo">
+                        <li contenteditable="true">✅ Create project skeleton</li>
+                        <li contenteditable="true">📝 Add pages and blocks</li>
+                        <li contenteditable="true">🚀 Submit to sir</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
+
+<!-- any other website to clone with these topics
+anchor_tag
+barcode
+dropdown
+form_validation
+forms
+html_char_entity
+linking
+list
+multimedia
+tables
+css
+
+animation
+attribute-selectors
+basics
+box-model
+box-shadow
+cards
+color-properties
+combinator-selector
+display
+displays
+font-properties
+gradients
+media-queries
+navbar
+positions
+pseudo-class-selectors
+pseudo-element-selectors
+simple-selectors
+text-properties
+tranform
+transition
+z-index
+to be practiced -->
