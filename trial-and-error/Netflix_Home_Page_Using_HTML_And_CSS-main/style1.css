@@ -48,17 +48,36 @@ nav button {
     cursor: pointer;
 }
 
+.btns {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.btns button {
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    padding: auto 15px;
+}
+
 .lang-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     background: transparent;
     border: 1px solid #fff;
     padding: 7px 10px;
 }
 
-.lang-btn img {
+.lang-btn .arrow {
     width: 10px;
     margin-left: 10px;
+}
+
+.lang-btn .translate {
+    width: 20px;
+    margin-right: 10px;
 }
 
 .fa-globe {
@@ -207,12 +226,12 @@ input[type="radio"] {
 
 .footer {
     padding: 50px 15% 10px;
-    border-top: 6px solid #333;
-    color: #777;
+    padding-bottom: 70px;
 }
 
 .footer h2 {
-    font-size: 18px;
+    color: #c2b9b9;
+    font-size: 22px;
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -221,18 +240,19 @@ input[type="radio"] {
     flex-basis: 25%;
     flex-grow: 1;
     margin-bottom: 20px;
+    /* margin-right: 4px; */
 }
 
 .footer .col a {
     display: block;
-    color: #777;
-    font-size: 14px;
+    color: #c2b9b9;
+    font-size: 18px;
     margin-bottom: 10px;
     /* text-decoration: none; */
 }
 
 .footer h2 a {
-    color: #777;
+    color: #c2b9b9;
 }
 
 .footer .row {
@@ -251,8 +271,6 @@ input[type="radio"] {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
-
 
 @media only screen and (max-width: 600px) {
     .logo {
