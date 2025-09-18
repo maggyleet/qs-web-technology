@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curved Divider with Red Line</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      /* page background */
+    }
+
+    .curve-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: #000;
+      /* black section */
+      overflow: hidden;
+    }
+
+    .svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .curve-fill {
+      fill: #0a1128;
+      /* dark navy fill inside curve */
+    }
+
+    .curve-stroke {
+      fill: none;
+      stroke: #ff004c;
+      stroke-width: 4;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="curve-container">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" class="svg">
+      <!-- Dark background fill below curve -->
+
+      <!-- Red curved line -->
+      <path class="curve-fill" d="M0,160 Q720,280 1440,160 L1440,320 L0,320 Z"></path>
+      <path class="curve-stroke" d="M0,160 Q720,280 1440,160"></path>
+    </svg>
+  </div>
+
+</body>
+
+</html>
