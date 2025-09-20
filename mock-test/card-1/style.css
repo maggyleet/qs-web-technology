@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(202, 86%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 550px;
+    width: 850px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.a {
+    width: 500px;
+    padding: 30px;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 27px;
+    font-weight: 700;
+
+}
+
+.clear {
+    color: rgb(90, 89, 89);
+    font-size: 16px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 17px;
+    color: hsl(200, 24%, 40%);
+    font-weight: 500;
+    padding-bottom: 7px;
+}
+
+.amount .box {
+    border: 1px solid rgb(90, 89, 89);
+    padding: 7px;
+    border-radius: 2px;
+}
+
+.term-rate {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.term .box {
+    border: 1px solid rgb(90, 89, 89);
+    padding: 7px;
+    border-radius: 2px;
+}
+
+.value {
+    padding: 20px 50px;
+    color: rgb(90, 89, 89);
+}
+
+.rate .value {
+    padding: 22px 60px;
+}
+
+.text-span {
+    box-sizing: content-box;
+}
+
+.rate .box {
+    border: 1px solid rgb(90, 89, 89);
+    padding: 7px;
+    border-radius: 2px;
+}
+
+.radio {
+    border: 1px solid rgb(90, 89, 89);
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: rgb(46, 45, 45);
+    font-weight: 600;
+}
+
+button {
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    color: hsl(202, 55%, 16%);
+    font-weight: 600;
+}
+
+.b {
+    width: 500px;
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 0px 20px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 10px;
+}
+
+.result {
+    color: white;
+    font-weight: 600;
+}
+
+.para {
+    color: hsl(203, 41%, 72%);
+    font-size: 16px;
+    text-align: center;
+}
