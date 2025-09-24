@@ -70,3 +70,7 @@ console.log(str22.replaceAll("cat", "dog"));
 
 let str23 = "a,b,c,d";
 console.log(str23.split(","));  // ["a","b","c","d"]
+
+const sentence = 'Hello, world!';
+console.log(sentence.includes('world'));   // true
+console.log(sentence.includes('JavaScript')); // false
