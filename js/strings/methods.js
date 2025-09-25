@@ -74,3 +74,9 @@ console.log(str23.split(","));  // ["a","b","c","d"]
 const sentence = 'Hello, world!';
 console.log(sentence.includes('world'));   // true
 console.log(sentence.includes('JavaScript')); // false
+
+let str24 = "raja";
+console.log(str24.padStart(10, "maha")); //mahamaraja
+
+let str25 = "sam"
+console.log(str25.padEnd(16, "vishal")) //samvishalvishalv

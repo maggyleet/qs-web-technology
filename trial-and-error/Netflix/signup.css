@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+.header {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+}
+
+.signin {
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.form-box {
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-box .step {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-box h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-box .sub {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 6px;
+}
+
+.readonly-email {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.forgot {
+    display: block;
+    font-size: 13px;
+    margin: 10px 0 20px;
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.next-btn {
+    width: 100%;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    background: #f3f3f3;
+    padding: 40px 6%;
+    font-size: 13px;
+    color: #333;
+}
+
+.footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.lang-select select {
+    padding: 6px 10px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+}

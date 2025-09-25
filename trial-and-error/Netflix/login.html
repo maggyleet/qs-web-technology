@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <img src="./Assets/logo.png" alt="Logo" class="logo">
+            <a href="#" class="help-link">Help</a>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="overlay"></div>
+        <div class="container form-wrap">
+            <form class="signin-card" action="#" method="POST" novalidate>
+                <h1>Sign In</h1>
+
+                <label class="input-label">
+                    <input type="email" name="email" placeholder="Email or phone number" required>
+                </label>
+
+                <label class="input-label password-label">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button type="button" id="togglePassword" class="show-btn">Show</button>
+                </label>
+
+                <button class="primary-btn" type="submit">Sign In</button>
+
+                <div class="form-row extras">
+                    <label class="remember">
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+                    <a href="#" class="need-help">Need help?</a>
+                </div>
+
+                <div class="signup">
+                    New to Netflix? <a href="index1.html">Sign up now</a>.
+                </div>
+
+                <p class="recaptcha">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                    <a href="#">Learn more</a>.
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Netflix India</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('togglePassword');
+        const pwd = document.getElementById('password');
+        toggle.addEventListener('click', () => {
+            const type = pwd.getAttribute('type') === 'password' ? 'text' : 'password';
+            pwd.setAttribute('type', type);
+            toggle.textContent = type === 'password' ? 'Show' : 'Hide';
+        });
+    </script>
+</body>
+
+</html>
