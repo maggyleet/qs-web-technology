@@ -1,0 +1,262 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    background: url("./Assets/header-image.jpg") no-repeat center center/cover;
+    height: 90vh;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-buttons button {
+    margin-left: 15px;
+    padding: 7px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid #777;
+    color: #fff;
+}
+
+.signin-btn {
+    background: #e50914;
+    color: #fff;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 25%;
+    max-width: 650px;
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.email-signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email-signup input {
+    padding: 15px;
+    width: 70%;
+    max-width: 400px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.email-signup button {
+    padding: 15px 25px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Features */
+.features {
+    padding: 50px 12%;
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    border-top: 8px solid #222;
+}
+
+.feature-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* FAQ */
+.faq {
+    border-top: 8px solid #222;
+    padding: 50px 12%;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    text-align: left;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.accordion li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.accordion label {
+    display: block;
+    background: #303030;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion .content {
+    background: #444;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+}
+
+.accordion input:checked~.content {
+    max-height: 200px;
+    padding: 20px;
+}
+
+.faq-signup-text {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    border-top: 8px solid #222;
+    padding: 50px 12%;
+    color: #757575;
+}
+
+.footer h2 {
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: block;
+    color: #757575;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer .lang-btn {
+    margin: 20px 0;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* ------------------------- */
+
+.lang-select {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #777;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: transparent;
+    color: #fff;
+    position: relative;
+}
+
+.lang-select i {
+    margin-right: 8px;
+    color: #fff;
+}
+
+.lang-select select {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    appearance: none;
+    /* removes default arrow */
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.lang-select img {
+    width: 12px;
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+}
