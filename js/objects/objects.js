@@ -36,3 +36,5 @@ console.log(a);
 delete b.color; // delete b['color'];
 console.log(b);
 
+
+//testing
