@@ -30,3 +30,23 @@ console.log(b);
 
 console.log(Object.isSealed(b)); //true
 
+
+// Freeze - when the object is freezed we cannot update the existing values as well as we cannot add the key, values also
+console.log(b);
+
+// If you need a modifiable version for a sealed object, create a new object:
+const b1 = { ...b };
+
+b1.sweet = "Laddu";
+console.log(b1);
+
+b1.game = "Plucking";
+console.log(b1);
+
+console.log(Object.freeze(b1));
+
+b1.color = "red";
+console.log(b1); // wont change, since the obj is freezed
+
+console.log(Object.isFrozen(b1));
+
