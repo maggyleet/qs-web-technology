@@ -50,3 +50,10 @@ console.log(b1); // wont change, since the obj is freezed
 
 console.log(Object.isFrozen(b1));
 
+//unfreeze
+//Using the spread syntax (...) for objects: This creates a new object with the same properties as the original, but the new object is not frozen.
+
+const frozenObject = Object.freeze({ a: 1, b: 2 });
+const unfrozenCopy = { ...frozenObject };
+unfrozenCopy.c = 3; // This will work on the copy
+console.log(unfrozenCopy); // { a: 1, b: 2, c: 3 }
